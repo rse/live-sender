@@ -1,0 +1,5 @@
+{
+    "bitrate": 900,
+    "profile": "high",
+    "rate_control": "CRF"
+}

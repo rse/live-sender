@@ -1,0 +1,7 @@
+{
+    "bitrate": 2500,
+    "keyint_sec": 1,
+    "profile": "high",
+    "rate_control": "VBR",
+    "tune": "zerolatency"
+}

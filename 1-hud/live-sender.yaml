@@ -1,0 +1,18 @@
+
+title:
+    nametext:  Dr. Ralf S. Engelschall
+    titletext: "LiVE Sample Lecture"
+
+progress:
+    slots: 7
+
+agenda:
+    slots:
+        - "Lorem Ipsum 1"
+        - "Lorem Ipsum 2"
+        - "Lorem Ipsum 3"
+        - "Lorem Ipsum 4"
+        - "Lorem Ipsum 5"
+        - "Lorem Ipsum 6"
+        - "Lorem Ipsum 7"
+

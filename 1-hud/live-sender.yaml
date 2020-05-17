@@ -1,4 +1,7 @@
 
+id:
+    peer: "live-receiver"
+
 title:
     nametext:  Dr. Ralf S. Engelschall
     titletext: "LiVE Sample Lecture"

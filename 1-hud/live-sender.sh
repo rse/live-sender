@@ -11,7 +11,7 @@ rm -f package.json
     -a 127.0.0.1 -p 9999 \
     -b mqtts://XXXX:XXXX@live.example.com \
     -n live-receiver \
-    -r stream/engelschall/sender \
-    -s stream/engelschall/receiver \
+    -r stream/example/sender \
+    -s stream/example/receiver \
     -d live-sender:@huds-hud-training,@huds-hud-training/training.yaml,live-sender.yaml${1+","}$1
 

@@ -69,8 +69,8 @@ npx sdkig -b 000000                       -i lightbulb             -I 999999 -t 
 
 npx sdkig -b 000000                       -i fill-drip             -I 444444 -t "FRAMEDROP" -T c0c0c0 -o key.d/key-obs-framedrop.png
 
-npx sdkig -b 000000                       -i arrow-alt-circle-up   -I 888888 -t "PREV"      -T c0c0c0 -o key.d/key-sdk-page-prev.png
-npx sdkig -b 000000                       -i arrow-alt-circle-down -I 888888 -t "NEXT"      -T c0c0c0 -o key.d/key-sdk-page-next.png
+npx sdkig -b 000000                       -i caret-square-up       -I 888888 -t "PREV"      -T c0c0c0 -o key.d/key-sdk-page-prev.png
+npx sdkig -b 000000                       -i caret-square-down     -I 888888 -t "NEXT"      -T c0c0c0 -o key.d/key-sdk-page-next.png
 
 npx sdkig -b 000000                       -i plus-square           -I 888888 -t "LIGHTER"   -T c0c0c0 -o key.d/key-sdk-lightness-lighter.png
 npx sdkig -b 000000                       -i minus-square          -I 888888 -t "DARKER"    -T c0c0c0 -o key.d/key-sdk-lightness-darker.png

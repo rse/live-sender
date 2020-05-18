@@ -66,8 +66,12 @@ npx sdkig -b 000000                       -i camera                -I 999999 -t 
 
 npx sdkig -b 339900                       -i images                -I c0ffa0 -t "STUDIO"    -T ffffff -o key.d/key-obs-scene-studio-on.png
 npx sdkig -b 000000                       -i images                -I 999999 -t "STUDIO"    -T c0c0c0 -o key.d/key-obs-scene-studio-off.png
-npx sdkig -b 339900                       -i image                 -I c0ffa0 -t "SCREENS"   -T ffffff -o key.d/key-obs-scene-screens-on.png
-npx sdkig -b 000000                       -i image                 -I 999999 -t "SCREENS"   -T c0c0c0 -o key.d/key-obs-scene-screens-off.png
+npx sdkig -b 339900 -s images -S 66cc33   -i user-alt-slash        -I c0ffa0 -t "SCREENS"   -T ffffff -o key.d/key-obs-scene-screens-on.png
+npx sdkig -b 000000 -s images -S 666666   -i user-alt-slash        -I 999999 -t "SCREENS"   -T c0c0c0 -o key.d/key-obs-scene-screens-off.png
+npx sdkig -b 339900 -s images -S 66cc33   -i user-alt              -I c0ffa0 -t "STAGE-L"   -T ffffff -o key.d/key-obs-scene-stage-L-on.png
+npx sdkig -b 000000 -s images -S 666666   -i user-alt              -I 999999 -t "STAGE-L"   -T c0c0c0 -o key.d/key-obs-scene-stage-L-off.png
+npx sdkig -b 339900 -s images -S 66cc33   -i user-alt              -I c0ffa0 -t "STAGE-R"   -T ffffff -o key.d/key-obs-scene-stage-R-on.png
+npx sdkig -b 000000 -s images -S 666666   -i user-alt              -I 999999 -t "STAGE-R"   -T c0c0c0 -o key.d/key-obs-scene-stage-R-off.png
 
 npx sdkig -b 339900                       -i lightbulb             -I c0ffa0 -t "LIGHT"     -T ffffff -o key.d/key-obs-light-on.png
 npx sdkig -b 000000                       -i lightbulb             -I 999999 -t "LIGHT"     -T c0c0c0 -o key.d/key-obs-light-off.png

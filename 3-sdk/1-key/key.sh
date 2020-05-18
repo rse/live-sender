@@ -1,4 +1,9 @@
 #!/bin/sh
+##
+##  Live Video Experience (LiVE)
+##  Copyright (c) 2020 Dr. Ralf S. Engelschall <rse@engelschall.com>
+##  Licensed under GPL 3.0 <https://spdx.org/licenses/GPL-3.0>
+##
 
 #   Generate key images for Elgato Stream-Deck with the help of the companion tool
 #   Stream-Deck Key-Image Generator (SDKIG) <https://github.com/rse/sdkig>

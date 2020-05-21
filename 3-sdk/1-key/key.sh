@@ -53,6 +53,9 @@ npx sdkig -b 000000                       -i wifi                  -I 999999 -t 
 npx sdkig -b ff0000                       -i dot-circle            -I ffe0e0 -t "RECORD"    -T ffffff -o key.d/key-hud-egress-record-on.png
 npx sdkig -b 000000                       -i dot-circle            -I 999999 -t "RECORD"    -T c0c0c0 -o key.d/key-hud-egress-record-off.png
 
+npx sdkig -b 996633 -s th       -S bb8855 -i expand                -I eebb88 -t "MINIMIZE"  -T ffffff -o key.d/key-hud-minimize.png
+npx sdkig -b 336699 -s th       -S 6699cc -i users                 -I 99ccff -t "ATTENDEES" -T ffffff -o key.d/key-hud-attendees.png
+
 npx sdkig -b 339900                       -i video                 -I c0ffa0 -t "CAMERAS"   -T ffffff -o key.d/key-obs-source-cameras-on.png
 npx sdkig -b 000000                       -i video                 -I 999999 -t "CAMERAS"   -T c0c0c0 -o key.d/key-obs-source-cameras-off.png
 npx sdkig -b 339900                       -i microphone-alt        -I c0ffa0 -t "MICROS"    -T ffffff -o key.d/key-obs-source-micros-on.png

@@ -33,7 +33,7 @@
     },
     "current_program_scene": "Stream-Studio",
     "current_scene": "Stream-Studio",
-    "current_transition": "Fade",
+    "current_transition": "Move",
     "groups": [
         {
             "balance": 0.5,
@@ -277,7 +277,7 @@
                             "y": 0.5
                         },
                         "scale_filter": "disable",
-                        "visible": false
+                        "visible": true
                     },
                     {
                         "align": 5,
@@ -306,7 +306,7 @@
                             "y": 1.1063394546508789
                         },
                         "scale_filter": "disable",
-                        "visible": true
+                        "visible": false
                     }
                 ]
             },
@@ -317,10 +317,31 @@
     ],
     "modules": {
         "advanced-scene-switcher": {
-            "active": true,
+            "active": false,
             "autoStopEnable": false,
             "autoStopSceneName": "",
-            "defaultTransitions": [],
+            "defaultTransitions": [
+                {
+                    "Scene": "Stream-Stage-L",
+                    "Str": "Stream-Stage-L --> Motion",
+                    "transition": "Motion"
+                },
+                {
+                    "Scene": "Stream-Stage-R",
+                    "Str": "Stream-Stage-R --> Motion",
+                    "transition": "Motion"
+                },
+                {
+                    "Scene": "Stream-Studio",
+                    "Str": "Stream-Studio --> Fade",
+                    "transition": "Fade"
+                },
+                {
+                    "Scene": "Stream-Screens",
+                    "Str": "Stream-Screens --> Fade",
+                    "transition": "Fade"
+                }
+            ],
             "executableSwitches": [],
             "fileSwitches": [],
             "idleEnable": false,
@@ -329,16 +350,18 @@
             "idleTransitionName": "",
             "ignoreIdleWindows": [],
             "ignoreWindows": [],
-            "interval": 300,
+            "interval": 1000,
+            "mediaSwitches": [],
             "non_matching_scene": "",
             "pauseScenes": [],
             "pauseWindows": [],
-            "priority0": 0,
-            "priority1": 1,
+            "priority0": 1,
+            "priority1": 0,
             "priority2": 2,
             "priority3": 3,
             "priority4": 4,
             "priority5": 5,
+            "priority6": 6,
             "randomSwitches": [],
             "readEnabled": false,
             "readPath": "",
@@ -389,6 +412,12 @@
             "name": "Stream-Studio"
         },
         {
+            "name": "Stream-Stage-L"
+        },
+        {
+            "name": "Stream-Stage-R"
+        },
+        {
             "name": "Stream-Screens"
         },
         {
@@ -437,7 +466,7 @@
             "settings": {
                 "buffering_mb": 1,
                 "hw_decode": false,
-                "input": "rtmps://live.example.com/stream/example?key=XXXX-XXXX",
+                "input": "rtmps://live.example.com/stream/example?key=XXXX-YYYY",
                 "is_local_file": false
             },
             "sync": 0,
@@ -452,10 +481,8 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Scene-Cameras": [],
                 "libobs.hide_scene_item.Scene-Micros": [],
                 "libobs.hide_scene_item.Scene-Screens": [],
-                "libobs.show_scene_item.Scene-Cameras": [],
                 "libobs.show_scene_item.Scene-Micros": [],
                 "libobs.show_scene_item.Scene-Screens": []
             },
@@ -531,35 +558,6 @@
                         },
                         "scale_filter": "disable",
                         "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 513,
-                        "crop_right": 415,
-                        "crop_top": 187,
-                        "group_item_backup": false,
-                        "id": 3,
-                        "locked": true,
-                        "name": "Scene-Cameras",
-                        "pos": {
-                            "x": 1310.0,
-                            "y": 531.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.61500495672225952,
-                            "y": 0.61478161811828613
-                        },
-                        "scale_filter": "disable",
-                        "visible": false
                     }
                 ]
             },
@@ -741,7 +739,7 @@
                             "y": 0.5
                         },
                         "scale_filter": "disable",
-                        "visible": false
+                        "visible": true
                     },
                     {
                         "align": 5,
@@ -770,7 +768,7 @@
                             "y": 1.1063394546508789
                         },
                         "scale_filter": "disable",
-                        "visible": true
+                        "visible": false
                     },
                     {
                         "align": 5,
@@ -1006,7 +1004,7 @@
             },
             "sync": 0,
             "versioned_id": "dshow_input",
-            "volume": 1.0
+            "volume": 0.43462643027305603
         },
         {
             "balance": 0.5,
@@ -1027,7 +1025,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "C:/Users/engelscr/live/live-sender/2-obs/LiVE-Sender-Studio-Canvas.png",
+                "file": "C:/Users/engelscr/Dropbox/studio.png",
                 "unload": false
             },
             "sync": 0,
@@ -1693,9 +1691,255 @@
             "sync": 0,
             "versioned_id": "wasapi_input_capture",
             "volume": 0.2651633620262146
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Scene-Cameras": [],
+                "libobs.hide_scene_item.Scene-Micros": [],
+                "libobs.hide_scene_item.Scene-Screens": [],
+                "libobs.show_scene_item.Scene-Cameras": [],
+                "libobs.show_scene_item.Scene-Micros": [],
+                "libobs.show_scene_item.Scene-Screens": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Stream-Stage-R",
+            "prev_ver": 419430408,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "custom_size": false,
+                "id_counter": 3,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 1,
+                        "locked": true,
+                        "name": "Scene-Micros",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 2,
+                        "locked": true,
+                        "name": "Scene-Screens",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 245,
+                        "crop_left": 513,
+                        "crop_right": 415,
+                        "crop_top": 236,
+                        "group_item_backup": false,
+                        "id": 3,
+                        "locked": true,
+                        "name": "Scene-Cameras",
+                        "pos": {
+                            "x": 981.0,
+                            "y": 513.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.94657260179519653,
+                            "y": 0.94657760858535767
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "versioned_id": "scene",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Scene-Cameras": [],
+                "libobs.hide_scene_item.Scene-Micros": [],
+                "libobs.hide_scene_item.Scene-Screens": [],
+                "libobs.show_scene_item.Scene-Cameras": [],
+                "libobs.show_scene_item.Scene-Micros": [],
+                "libobs.show_scene_item.Scene-Screens": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Stream-Stage-L",
+            "prev_ver": 419430408,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "custom_size": false,
+                "id_counter": 3,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 1,
+                        "locked": true,
+                        "name": "Scene-Micros",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 2,
+                        "locked": true,
+                        "name": "Scene-Screens",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 245,
+                        "crop_left": 513,
+                        "crop_right": 415,
+                        "crop_top": 236,
+                        "group_item_backup": false,
+                        "id": 3,
+                        "locked": true,
+                        "name": "Scene-Cameras",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 513.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.94657260179519653,
+                            "y": 0.94657760858535767
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "versioned_id": "scene",
+            "volume": 1.0
         }
     ],
-    "transition_duration": 500,
+    "transition_duration": 1000,
     "transitions": [
         {
             "id": "motion-transition",
@@ -1706,6 +1950,26 @@
             "id": "obs_stinger_transition",
             "name": "Stinger",
             "settings": {}
+        },
+        {
+            "id": "move_transition",
+            "name": "Move",
+            "settings": {
+                "curve_match": 0.0,
+                "easing_function_match": 2,
+                "easing_in": 0,
+                "easing_out": 0,
+                "name_part_match": true,
+                "position_in": 0,
+                "position_out": 0,
+                "switch_percentage": 50,
+                "transition_in": "",
+                "transition_match": "",
+                "transition_out": "",
+                "transition_scale_match": 1,
+                "zoom_in": false,
+                "zoom_out": false
+            }
         }
     ]
 }

@@ -1,8 +1,8 @@
 {
     "settings": {
         "bwtest": false,
-        "key": "example?key=XXXX-XXXX",
-        "server": "rtmps://live.example.com/stream/",
+        "key": "example?key=XXXX-YYYY",
+        "server": "rtmps://live.example-com/stream/",
         "use_auth": false
     },
     "type": "rtmp_custom"

@@ -7,5 +7,6 @@ It consists of the following artifacts:
 
 - [OBS Profile Export](LiVE-Sender/)
 - [OBS Scene Collection Export](LiVE-Sender.json)
-- [OBS Canvas Image](LiVE-Sender-Studio-Canvas.png)
+- [OBS Canvas Image Studio](LiVE-Sender-Canvas-Studio.png)
+- [OBS Canvas Image Stage](LiVE-Sender-Canvas-Stage.png)
 

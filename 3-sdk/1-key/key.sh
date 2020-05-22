@@ -60,10 +60,12 @@ npx sdkig -b 339900                       -i video                 -I c0ffa0 -t 
 npx sdkig -b 000000                       -i video                 -I 999999 -t "CAMERAS"   -T c0c0c0 -o key.d/key-obs-source-cameras-off.png
 npx sdkig -b 339900                       -i microphone-alt        -I c0ffa0 -t "MICROS"    -T ffffff -o key.d/key-obs-source-micros-on.png
 npx sdkig -b 000000                       -i microphone-alt        -I 999999 -t "MICROS"    -T c0c0c0 -o key.d/key-obs-source-micros-off.png
-npx sdkig -b 339900                       -i tablet                -I c0ffa0 -t "TABLET"    -T ffffff -o key.d/key-obs-source-tablet-on.png
-npx sdkig -b 000000                       -i tablet                -I 999999 -t "TABLET"    -T c0c0c0 -o key.d/key-obs-source-tablet-off.png
-npx sdkig -b 339900                       -i laptop                -I c0ffa0 -t "NOTEBOOK"  -T ffffff -o key.d/key-obs-source-notebook-on.png
-npx sdkig -b 000000                       -i laptop                -I 999999 -t "NOTEBOOK"  -T c0c0c0 -o key.d/key-obs-source-notebook-off.png
+npx sdkig -b 339900                       -i tablet                -I c0ffa0 -t "iPad Pro"  -T ffffff -o key.d/key-obs-source-ipadpro-on.png
+npx sdkig -b 000000                       -i tablet                -I 999999 -t "iPad Pro"  -T c0c0c0 -o key.d/key-obs-source-ipadpro-off.png
+npx sdkig -b 339900                       -i laptop                -I c0ffa0 -t "MacBook"   -T ffffff -o key.d/key-obs-source-macbook-on.png
+npx sdkig -b 000000                       -i laptop                -I 999999 -t "MacBook"   -T c0c0c0 -o key.d/key-obs-source-macbook-off.png
+npx sdkig -b 339900                       -i laptop                -I c0ffa0 -t "Notebook"  -T ffffff -o key.d/key-obs-source-notebook-on.png
+npx sdkig -b 000000                       -i laptop                -I 999999 -t "Notebook"  -T c0c0c0 -o key.d/key-obs-source-notebook-off.png
 npx sdkig -b 339900                       -i camera                -I c0ffa0 -t "NDI"       -T ffffff -o key.d/key-obs-source-ndi-on.png
 npx sdkig -b 000000                       -i camera                -I 999999 -t "NDI"       -T c0c0c0 -o key.d/key-obs-source-ndi-off.png
 

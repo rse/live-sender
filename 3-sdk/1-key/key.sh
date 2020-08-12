@@ -29,8 +29,15 @@ npx sdkig -b 336699                       -i sync-alt              -I 99ccff -t 
 npx sdkig -b 336699                       -i poll-h                -I 99ccff -t "VOTE"      -T ffffff -o key.d/key-hud-vote.png
 npx sdkig -b 336699 -s poll-h -S 6699cc   -i gavel                 -I 99ccff -t "JUDGE"     -T ffffff -o key.d/key-hud-vote-judge.png
 npx sdkig -b 336699 -s poll-h -S 6699cc   -i tachometer-alt        -I 99ccff -t "EVAL"      -T ffffff -o key.d/key-hud-vote-eval.png
+npx sdkig -b 336699 -s poll-h -S 6699cc   -i dice                  -I 99ccff -t "QUIZ"      -T ffffff -o key.d/key-hud-vote-quiz.png
 npx sdkig -b 336699 -s poll-h -S 6699cc   -i hand-pointer          -I 99ccff -t "CHOOSE"    -T ffffff -o key.d/key-hud-vote-choose.png
 npx sdkig -b 336699 -s poll-h -S 6699cc   -i comment-dots          -I 99ccff -t "PROPOSE"   -T ffffff -o key.d/key-hud-vote-propose.png
+
+npx sdkig -b 336699 -s poll-h -S 6699cc   -i search                -I 99ccff -t "REVEAL"    -T ffffff -o key.d/key-hud-vote-reveal.png
+npx sdkig -b 336699 -s poll-h -S 6699cc   -i eye                   -I 99ccff -t "DISCLOSE"  -T ffffff -o key.d/key-hud-vote-disclose.png
+
+npx sdkig -b 336699 -s poll-h -S 6699cc   -i arrow-circle-left     -I 99ccff -t "PREV"      -T ffffff -o key.d/key-hud-vote-prev.png
+npx sdkig -b 336699 -s poll-h -S 6699cc   -i arrow-circle-right    -I 99ccff -t "NEXT"      -T ffffff -o key.d/key-hud-vote-next.png
 
 npx sdkig -b 336699                       -i clock                 -I 99ccff -t "TIMER-5"   -T ffffff -o key.d/key-hud-timer-5.png
 npx sdkig -b 336699                       -i clock                 -I 99ccff -t "TIMER-10"  -T ffffff -o key.d/key-hud-timer-10.png
@@ -58,6 +65,8 @@ npx sdkig -b 336699 -s th       -S 6699cc -i users                 -I 99ccff -t 
 
 npx sdkig -b 339900                       -i video                 -I c0ffa0 -t "CAMERAS"   -T ffffff -o key.d/key-obs-source-cameras-on.png
 npx sdkig -b 000000                       -i video                 -I 999999 -t "CAMERAS"   -T c0c0c0 -o key.d/key-obs-source-cameras-off.png
+npx sdkig -b 339900                       -i ghost                 -I c0ffa0 -t "SHADOW"    -T ffffff -o key.d/key-obs-source-shadow-on.png
+npx sdkig -b 000000                       -i ghost                 -I 999999 -t "SHADOW"    -T c0c0c0 -o key.d/key-obs-source-shadow-off.png
 npx sdkig -b 339900                       -i microphone-alt        -I c0ffa0 -t "MICROS"    -T ffffff -o key.d/key-obs-source-micros-on.png
 npx sdkig -b 000000                       -i microphone-alt        -I 999999 -t "MICROS"    -T c0c0c0 -o key.d/key-obs-source-micros-off.png
 npx sdkig -b 339900                       -i tablet                -I c0ffa0 -t "iPad Pro"  -T ffffff -o key.d/key-obs-source-ipadpro-on.png
@@ -88,4 +97,6 @@ npx sdkig -b 000000                       -i caret-square-down     -I 888888 -t 
 
 npx sdkig -b 000000                       -i plus-square           -I 888888 -t "LIGHTER"   -T c0c0c0 -o key.d/key-sdk-lightness-lighter.png
 npx sdkig -b 000000                       -i minus-square          -I 888888 -t "DARKER"    -T c0c0c0 -o key.d/key-sdk-lightness-darker.png
+
+npx sdkig -b 336699                       -i glass-cheers          -I 99ccff -t "CONFETTI"  -T ffffff -o key.d/key-hud-confetti.png
 

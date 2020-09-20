@@ -78,6 +78,10 @@ npx sdkig -b 000000                       -i laptop                -I 999999 -t 
 npx sdkig -b 339900                       -i camera                -I c0ffa0 -t "NDI"       -T ffffff -o key.d/key-obs-source-ndi-on.png
 npx sdkig -b 000000                       -i camera                -I 999999 -t "NDI"       -T c0c0c0 -o key.d/key-obs-source-ndi-off.png
 
+npx sdkig -b 339900 -s microphone-alt -S 66cc33 -i lock-open       -I c0ffa0 -t "UNDUCK"    -T ffffff -o key.d/key-obs-source-micros-unduck.png
+npx sdkig -b 339900 -s microphone-alt -S 66cc33 -i times-circle    -I c0ffa0 -t "DRAIN"     -T ffffff -o key.d/key-obs-source-micros-drain.png
+npx sdkig -b 339900 -s microphone-alt -S 66cc33 -i wifi            -I c0ffa0 -t "REVERB"    -T ffffff -o key.d/key-obs-source-micros-reverb.png
+
 npx sdkig -b 339900                       -i images                -I c0ffa0 -t "STUDIO"    -T ffffff -o key.d/key-obs-scene-studio-on.png
 npx sdkig -b 000000                       -i images                -I 999999 -t "STUDIO"    -T c0c0c0 -o key.d/key-obs-scene-studio-off.png
 npx sdkig -b 339900 -s images -S 66cc33   -i user-alt-slash        -I c0ffa0 -t "SCREENS"   -T ffffff -o key.d/key-obs-scene-screens-on.png

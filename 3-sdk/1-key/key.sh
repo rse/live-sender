@@ -104,3 +104,6 @@ npx sdkig -b 000000                       -i minus-square          -I 888888 -t 
 
 npx sdkig -b 336699                       -i glass-cheers          -I 99ccff -t "CONFETTI"  -T ffffff -o key.d/key-hud-confetti.png
 
+npx sdkig -b 996633 -s laptop   -S bb8855 -i arrow-alt-circle-left -I eebb88 -t "DISCONNECT" -T ffffff -o key.d/key-hud-disconnect.png
+npx sdkig -b 996633 -s laptop   -S bb8855 -i sync-alt              -I eebb88 -t "RECONNECT"  -T ffffff -o key.d/key-hud-reconnect.png
+
